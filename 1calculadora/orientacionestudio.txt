@@ -1,0 +1,3 @@
+Calculadora.php y calculadorasegundaopcion.php junto a ejemplo_operadores.html tienen la logica a parte
+
+ejemplo2_operadores.php coge calculadora.php para que sea la logica en la misma pagina
