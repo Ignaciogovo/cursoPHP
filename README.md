@@ -1,2 +1,2 @@
 # cursoPHP
-10-agosto 2 pomodoros
+25-Agosto -->Clase 25
