@@ -1,0 +1,133 @@
+0Inicio PHP`
+					-Para linux --> sudo cp ejemplo.php /var/www/html
+<?php
+
+?>
+
+-Comentarios
+	// comentario para una sola linea
+	/*   Comentario
+		varias lineas */
+
+-Nombrar una variable
+$nombrevariable
+	ejemplo--> $nombre="Juan";
+	
+			Normas --> No valen simbolos extraños ni empezar con un número
+
+-Imprimir por pantalla
+	print "cualquier cosa";
+	
+	Concatenar varias cosas al imprimir
+	print "El nombre del usuario es " . $nombre;  ---> Tambien puede estar incluido dentro de las
+							comillas dobles
+						print "El nombre del usuario es $nombre";
+
+	Otra forma de imprimir
+	echo "cualquier cosa";
+
+
+
+-Crear una funcion 
+	
+	function dameDatos(){
+	
+	
+	}		La función destruye el valor de las variables luego de ejecutarse, para que asi no sea:
+			
+			static --> Example function incrementaVariable(){
+						static $contador=0;
+						$contador++;
+						echo $contador . "<br>";
+						}
+					Asi, el contador se incrementará cada vez que se invoque la función.
+				
+
+		
+-Meter una variable dentro de una function
+		$variable1=$_POST["x"];
+		fucntion nombre(){
+			global $variable1;
+		}
+
+	
+
+
+
+
+- Relacionar varios archivos
+	include("nombreArchivo");  --> Permite conectar un archivo con otro.
+
+
+
+
+
+
+
+-String
+	strcmp
+	strcasecmp- compara varios string sin que importe las minusculas y las mayusculas.
+
+		Devuelven 1 si no coincide, devuelve 0 si coincide
+	Ejemplo:
+		if(!strcmp("nombre",$variable");{
+		}
+
+
+
+
+
+
+
+
+Operadores de comparación
+	$var1==$var2	--> Igual que
+	$var1===$var2   --> Identico que  (Verdadero si son igulaes y del mismo tipo)
+	$var1!=$var2	--> Diferente que
+	$var1<$var2	--> Menor que
+	$var1>$var2	--> Mayor que
+	$var1<$var2 	--> Menor o igual que
+	$var1>$var2	--> Mayor o igual que
+
+
+
+
+Para comprobar que se ha pulsado un boton
+
+
+	if(isset($_POST["nombre_boton"])){}
+
+
+Variable Superglobal (Arrays)
+	$variable=$_POST["nombre_x"];
+
+
+
+
+
+
+
+
+Constantes
+	define("Nombre_constante", valor);
+			-El nombre de las constantes debe estar en Mayuscula
+			-Una constante no puede almacenar una arrays
+
+
+
+Calculos matematicos.
++ --> Suma
+- --> Resta
+* --> Multiplicar
+/ --> Dividir
+% --> Devuelve el resto
+++ += --> Incremento
+-- -= --> Decremento
+
+
+
+
+convertir un numero en entero
+	Ejemplo:
+	$num1="5";
+	$resultado=(int)$num1;

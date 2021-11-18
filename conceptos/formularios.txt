@@ -1,0 +1,50 @@
+
+
+
+
+select---> Seleccionar entre varios. Ejemplo: 
+		<select name="pelicula1" id="pelicula1">
+			<option value="1">El Padrino</option>
+			<option value="2">21 black jack</option>
+			<option value="3">El cazador</option>
+			<option value="4" disabled="disabled">La jungla de cristal</option>
+			<option value="5">Titanic</option>
+			<option value="6">La soga</option>
+			<option value="7">Pulp Fiction</option>
+			<option value="8">Crimen perfecto</option>
+			<option value="9">Desafío total</option>
+		</select>	
+Tipos de input:
+	text
+	password
+	submit
+	reset
+	radio -----> escoger UNA opcion entre varias opciones. Ejemplo:	<input type="radio" name "gender" value="male">
+								<input type="radio" name "gender" value="female">
+								<input type="radio" name "gender" value="other">
+	checkbox --> escoger ninguna o varias opociones.
+	button ----> Define un botón. 		Ejemplo:        <input type="button" onclick="alert('¡Hola programador!')" value="¡Haz click!">
+	color ---> escoger un color
+	date --> escoger una fecha
+		month
+		week
+		time
+	email
+	file --> Campo para subir ficheros.
+	number
+	search --> se usa para buscadores.
+	tel --> Telefono
+	url --> Añadir una url
+
+Restricciones de los inputs
+checked: Especifica si un input de tipo checkbox o radio tiene que estar seleccionado por defecto
+disabled: Especifica si un input debería estar deshabilitado
+max: Especifica el máximo del valor de un input
+maxlength: Especifica el número máximo de caracteres
+min: Especifica el valor mínimo del input
+pattern: Especifica una expresión regular para chequear el valor del input
+readonly: Especifica si el input no se puede cambiar
+required: Especifica si el input es obligatorio de rellenar
+size: Especifica el ancho (en caracteres) para el input
+step: Especifica el intervalo para pasar de un valor numérico a otro
+value: Especifica el valor por defecto del input

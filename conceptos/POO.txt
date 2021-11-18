@@ -1,0 +1,86 @@
+Crear una clase:
+
+class nombre_clase{
+	//Propiedades
+	//Funciones
+	}
+$variable=new nombre_clase();             -----> Indicas que esa variable pertenece a esa clase
+	
+	Ejemplo:
+	
+	    class coche{
+                //Propiedades
+                var $ruedas;
+                var $color;
+                var $motor;
+                //Funciones
+                function coche(){//Cuando la funcion tiene el mismo nombre que la clase es el metodo constructor, da el estado inicial.
+                    $this->ruedas=4;
+                    $this->color="";
+                    $this->motor=1600;//Siempre que se pone $this es una forma de referirse a la clase
+                }
+                function arrancar(){
+                    echo"Estoy arrancando<br>";
+
+                function establece_color($color_coche, $nombre_coche){
+                    $this->color=$color_coche;
+                    echo "El color de" . $nombre_coche . "es:" . $this->color . "<br>";
+                }
+            }
+            $renault=new coche();
+            $mazda=new coche();
+            $seat=new coche();
+            $mazda->arrancar();
+	    $renault->establece_color("Rojo","Renault");
+            $seat->establece_color("Amarillo", "SEAT");
+
+
+
+
+
+
+
+Herencia
+class nombre_clase_hijo extends nombre_clase_padre{
+	//Propiedades
+	//Funciones
+}
+
+
+
+
+	ejemplo
+ class camion extends coche{
+                function coche(){//Cuando la funcion tiene el mismo nombre que la clase es el metodo constructor, da el estado inicial.
+                    $this->ruedas=8;
+                    $this->color="gris";
+                    $this->motor=2400;//Siempre que se pone $this es una forma de referirse a la clase
+                }
+            }
+	Metodo parent
+class nombre_clase_hijo extends nombre_clase_padre{
+	function nombre_funcion(){
+		parent::nombre_funcion_padre();
+		x;
+	}
+}
+
+
+
+Modificadores de acceso
+Public, private, protected
+
+
+
+	--Metodo setter---> Modificar las propiedades de un objeto.
+	--Metodo getter---> Ver las propiedades de un objeto.
+
+			----Hay que crear una funcion en la clase
+			funcion getter_nombre_caracteristica(){
+			return $this->caracteristica
+			}
+
+
+
+Como acceder a una variable estatica de una clase
+ self::nombre_variable

@@ -1,0 +1,41 @@
+
+  CONDICIONAL	IF
+if(condicion){
+	x;
+}
+else if(condicion){
+	x;
+}
+
+else{
+	x;
+}
+
+
+
+Operador Ternario.
+?  valor si verdadero    : valor si falso
+
+	Ejemplo	
+	   echo   $edad<18 ? "Eres menor de edad." : "Eres mayor de edad;
+		 Condicion	Respuesta positiva	respuesta negativa
+
+
+
+
+CONDICIONAL Switch
+
+
+switch($variable){
+case condición:
+	x;
+break;
+case condición:
+	x;
+break;
+case condición:
+	x;
+break;
+default;
+	x;
+}

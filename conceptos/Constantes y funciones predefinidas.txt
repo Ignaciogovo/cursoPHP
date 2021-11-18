@@ -1,0 +1,37 @@
+Constantes predefinidas
+
+__LINE__  --> El número de línea actual en el fichero.
+
+__FILE__  --> Ruta completa y nombre de fichero con enlaces simbólicos resueltos.
+	      Si se usa dentro de un include, devolverá el nombre del fichero incluido
+
+__DIR__   --> Directorio del fichero. Si sse utiliza dentro de un include, devolverá el
+	      directorio del fichero incluído. Es igual que --> dirname(__FILE__).
+
+__FUNCTION__   --> Nombre de la función.
+
+__CLASS__  --> Nombre de la clase. El nombre de la clase incluye el namespace declarado en
+	       (p.e.j. Foo\Bar).
+
+__TRAIT__ --> El nombre del trait.
+
+__METHOD__ -->Nombre del método de la clase.
+
+__NAMESPACE__ Nombre del espacio de nombres actual.
+
+ClassName::class --> Nombre de clase completamente cualificado.
+
+
+
+
+Funciones:
+
+sqrt --> Raiz cuadrada
+pow --> Expresión exponencial
+round --> Redondea un float
+rand --> Genera un numero aleatorio;
+strtolower --> Convierte una cadena de texto a minuscula
+strtoupper --> Convierte una cadena de texto a mayuscula.
+ucwords --> Convierte la primera letra en mayuscula.
+is_numeric() --> Comprueba si es numerica la variable.
+
