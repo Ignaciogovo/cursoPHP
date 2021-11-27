@@ -1,6 +1,32 @@
+ Ejemplo de formulario:
+
+<form action="cadena.php" method="post">
+        <legend>Inicialización del Array</legend>
+        <fieldset>
+            <label>Texto 1</label>
+            <input type="text" name="texto1" required><br>
+            <label>Texto 2</label>
+            <input type="text" name="texto2" required><br>
+            <label>Texto 3</label>
+            <input type="text" name="texto3" required><br>
+        </fieldset>
+            <legend>Herramientas</legend>
+            <select name="herramienta">
+                <option value="mayuscula">Texto Mayusculas</option>
+                <option value="desorden">Desordena el texto introducido</option>
+                <option value="convertir">convierte el texto en un array</option>
+                <option value="ordena">Cuenta el número de caracteres</option>
+                <option value="reemplazar">reemplazar palabra</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reset">
+    </form>
 
 
 
+
+Conceptos:
 
 select---> Seleccionar entre varios. Ejemplo: 
 		<select name="pelicula1" id="pelicula1">
@@ -42,9 +68,16 @@ disabled: Especifica si un input debería estar deshabilitado
 max: Especifica el máximo del valor de un input
 maxlength: Especifica el número máximo de caracteres
 min: Especifica el valor mínimo del input
-pattern: Especifica una expresión regular para chequear el valor del input
-readonly: Especifica si el input no se puede cambiar
+pattern: Especifica una expresión regular para chequear el valor del input -----> Ejemplo: <input type="text" pattern:"[0-9] {4} - [A-Z] {3}"> La expresión anterior especifica que se deben introducir obligatoriamente 4 números, un guión – y tres letras mayúsculas.
 required: Especifica si el input es obligatorio de rellenar
 size: Especifica el ancho (en caracteres) para el input
 step: Especifica el intervalo para pasar de un valor numérico a otro
 value: Especifica el valor por defecto del input
+oncopy="return false": No permite el copiado
+onpaste="return false": No permite el pegado.
+
+
+
+
+
+<textarea> Produce un area de texto</textarea>

@@ -26,12 +26,46 @@ ClassName::class --> Nombre de clase completamente cualificado.
 
 Funciones:
 
+
+
+
+Funciones númericas:
 sqrt --> Raiz cuadrada
 pow --> Expresión exponencial
 round --> Redondea un float
-rand --> Genera un numero aleatorio;
+rand --> Genera un numero aleatorio
+base_convert --> cambia la base de un número  Ejemplo --> Cambio de base de hexadeximal a decimal: base_convert($variable,16,10);
+
+
+Funciones de cadenas de texto:
 strtolower --> Convierte una cadena de texto a minuscula
 strtoupper --> Convierte una cadena de texto a mayuscula.
 ucwords --> Convierte la primera letra en mayuscula.
+str_shuffle --> Desordena el texto.
+str_split --> Convierte un string en un array     Ejemplo --> $array = str_split($string, 3); El 3 se refiere a la cantidad de caracteres que tiene cada columna de un array
+strlen --> Cuenta la cantidad de caracteres que tiene la cadena.
+str_replace --> Remplaza palabras   Ejemplo -->str_replace("%body%", "black", "<body text='%body%'>"); Saldrá : <body text='black'>
+
+Funciones de arrays:
+array_shift --> Elimina el primer valor del array
+array_pop --> Elimina el ultimo valor del array
+array_chunk --> Divide el array   Ejemplo --> array_chunk($nombre_array, 4) Divide el array cada 4 valores.
+Krsort --> Ordena de forma inversa según sus claves
+sort --> Ordena segun el valor de los elementos.
+unset --> Borra un elemento especifico del array  Ejemplo --> unset($array[3]);  Borra el elemento 3 del array.
+array_merge --> Une arrays
+array_diff --> saca la diferencia de dos arrays (siempre tiene que ir el array mas grande delante.)
+array_intersect --> Saca los datos comunesde los arrays
+count --> Cuenta los elementos de un array
+array_push --> incluye mas elementos a un array
+
+Funciones de comprobación:
 is_numeric() --> Comprueba si es numerica la variable.
+is_int --> Comprueba si es integer
+is_string --> Comprueba si es string
+is_object --> Comprueba si es un objeto
+is_float --> Comprueba si es un float
+is_array --> Comprueba si es array
+is_null -->Comprueba si la variable es null
+
 
