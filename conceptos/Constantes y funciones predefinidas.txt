@@ -69,3 +69,10 @@ is_array --> Comprueba si es array
 is_null -->Comprueba si la variable es null
 
 
+
+
+Funciones de fichero
+readfile() --> Le el fichero y añade al final el peso en bytes del fichero.
+filesize() --> Escribe el tamaño del fichero
+fopen() --> Abre fichero o url
+
