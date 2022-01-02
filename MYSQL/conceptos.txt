@@ -1,0 +1,48 @@
+Para conexión:
+    $conexion=mysqli_connect(host,usuario,contraseña,nombreBD(no necesario),puerto(no necesario))
+consulta: 
+    $resultado=mysqli_query($conexion, consulta)
+
+Sacar los datos de la consulta. --> Con esto los datos se almacenan en un array
+    $array=mysqli_fetch_row($resultado); ---> Solo coge una fila de datos.
+
+
+conexion fallida
+ if (mysqli_connect_errno()){
+            echo "Conexión fallida" . mysqli_connect_error();
+            exit()
+        }
+
+para poner los caracteres:
+    mysqli_set_charset($conexion,"utf8");
+
+Conectar a una base de dastos esfecifica:
+mysqli_select_db($conexion, nombreBD)
+
+Cerrar una conexión:
+    mysqli_close($conexion);
+
+Conexion por PDO
+$conexion=new PDO("sqlsrv:server=ip, puerto;database=nombre_base", "usuario","contraseña");
+$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERMODE_ECEPTION);
+
+
+Pedir un dato
+$sql="consulta";
+    $resultados=$conexion->prepare($sql, [   //Obtener datos a partir de un cursor.
+    PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL,
+]);
+$resultados->execute();
+
+
+//Usos de fetch 
+fetch
+    $variable=$sentencia->fetch();   --> Array ( [id] => 1 [0] => 1 [nombre] => Alonso [1] => Alonso ) convierte los nombres de las tablas en números
+
+fetchObject()
+    $variable=$sentencia->fetchObject(); --> stdClass Object ( [id] => 1 [nombre] => Joaquim Reis );
+    $variable=$variable->nombre;    --> Joaquim Reis
+    $variable=$sentencia->fetchColumn();(Según el número entre parentesis)
+    
+
+
