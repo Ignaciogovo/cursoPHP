@@ -61,6 +61,7 @@ Tipos de input:
 	search --> se usa para buscadores.
 	tel --> Telefono
 	url --> Añadir una url
+	hidden --> Permite ocultar el input al usuario.
 
 Restricciones de los inputs
 checked: Especifica si un input de tipo checkbox o radio tiene que estar seleccionado por defecto
