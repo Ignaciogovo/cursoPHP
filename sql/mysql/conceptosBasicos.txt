@@ -1,0 +1,33 @@
+Conexion:
+    <? php
+    $servername = "servername"; // Nombre/IP del servidor
+    $database = "databasename"; // Nombre de la BBDD
+    $username = "username"; // Nombre del usuario
+    $password = "password"; // Contraseña del usuario
+    // Creamos la conexión
+    $con = mysqli_connect($servername, $username, $password, $database);
+    // Comprobamos la conexión
+    if (!$con) {
+        die("La conexión ha fallado: " . mysqli_connect_error());
+    }
+    echo "Conexión satisfactoria";
+    mysqli_close($con);
+    ?>
+
+
+Sacar datos de varias filas:
+    
+    if ($result=mysqli_query($conn,$query))
+    {
+    // Fetch one and one row
+    while ($row=mysqli_fetch_row($result))
+        {
+            echo " Item name :".$row[0]." , ";
+            echo " Description : ".$row[1];
+            echo  nl2br (" \n ");
+        }//end while
+    // Free result set
+    mysqli_free_result($result);
+    }// end if
+    mysqli_close($conn);
+    ?>

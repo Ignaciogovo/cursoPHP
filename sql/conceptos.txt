@@ -1,7 +1,16 @@
 Para conexión:
-    $conexion=mysqli_connect(host,usuario,contraseña,nombreBD(no necesario),puerto(no necesario))
+    $conexion=mysqli_connect(host,usuario,contraseña,nombreBD(no necesario),puerto(no necesario));
+
+Comprobacion conexion:
+	if (!$conexion) {
+	    die("La conexión ha fallado: " . mysqli_connect_error());
+	}
+	echo "Conexión satisfactoria";
+	mysqli_close($conexion);
+	
+
 consulta: 
-    $resultado=mysqli_query($conexion, consulta)
+	    $resultado=mysqli_query($conexion, consulta)
 
 Sacar los datos de la consulta. --> Con esto los datos se almacenan en un array
     $array=mysqli_fetch_row($resultado); ---> Solo coge una fila de datos.
